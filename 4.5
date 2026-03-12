@@ -1,0 +1,6 @@
+count = int(input("Сколько элементов в цепи: "))
+ans = 0
+for i in range(count):
+    R = float(input("Введите сопротивление элемента: "))
+    ans += 1/R
+print(f"Общее сопротивление = {1/ans}")
