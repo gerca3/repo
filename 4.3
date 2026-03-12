@@ -1,0 +1,13 @@
+import math
+
+
+eps = int(input("Введите эпсилон: "))
+counter, result = 0, 0
+while True:
+    counter += 1
+    a = 10**counter / math.factorial(counter)
+    if abs(a) <= eps:
+        result += a
+    else:
+        break
+print(f"Ответ = {result}")
