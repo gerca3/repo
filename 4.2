@@ -1,0 +1,10 @@
+from math import factorial
+
+
+x = float(input("Введите x: "))
+ans = x
+count = 1
+for i in range(3, 14, 2):
+    ans += (x**i / factorial(i)) * ((-1)**count)
+    count += 1
+print(f"Ответ = {ans:.4f}")
